@@ -1,0 +1,46 @@
+/* Write your CSS here */
+.movie-container {
+  width: 215px;
+  height: 150px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+@media (min-width: 1200px) {
+  .movie-container {
+    width: 254px;
+    height: 170px;
+    padding-right: 25px;
+  }
+}
+
+.popup-container {
+  background-color: #ffffff;
+  width: 750px;
+  height: 480px;
+  border-radius: 16px;
+}
+
+.modal-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.close-button {
+  align-self: flex-end;
+  background-color: transparent;
+  width: 28px;
+  height: 28px;
+  border: none;
+  margin-top: 18px;
+  margin-right: 18px;
+  outline: none;
+  cursor: pointer;
+}
+
+.movie-player-container {
+  margin: 12px 40px 12px 40px;
+}
