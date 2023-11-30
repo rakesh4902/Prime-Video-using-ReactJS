@@ -3,8 +3,9 @@ import MoviesSlider from '../MoviesSlider'
 import './index.css'
 
 const PrimeVideo = props => {
-  const moviesList = {props}
+  const {moviesList} = props
 
+  console.log(moviesList)
   const actionMovies = moviesList.filter(
     eachMovie => eachMovie.categoryId === 'ACTION',
   )
@@ -21,10 +22,12 @@ const PrimeVideo = props => {
         alt="prime video"
         className="prime-video-image"
       />
-      <h1 className="genre-header">Action Movies</h1>
-      <MoviesSlider moviesList={actionMovies} />
-      <h1 className="genre-header">Comedy Movies</h1>
-      <MoviesSlider moviesList={comedyMovies} />
+      <div className="prime-movie-container">
+        <h1 className="genre-header">Action Movies</h1>
+        <MoviesSlider moviesList={actionMovies} />
+        <h1 className="genre-header">Comedy Movies</h1>
+        <MoviesSlider moviesList={comedyMovies} />
+      </div>
     </div>
   )
 }
